@@ -1,0 +1,295 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+/* =========================
+   ROOT THEME
+========================= */
+:root {
+    --bg: #0B1020;
+    --bg2: #12192e;
+    --card: rgba(255, 255, 255, 0.08);
+    --card-strong: rgba(255, 255, 255, 0.11);
+    --border: rgba(255, 255, 255, 0.14);
+    --text: #F5F7FB;
+    --muted: #AAB3C5;
+    --green: #7CFC00;
+    --pink: #FF4D9D;
+    --cyan: #52E5FF;
+    --purple: #A970FF;
+    --danger: #ff6b81;
+    --shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
+
+/* =========================
+   GLOBAL APP BACKGROUND
+========================= */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+.stApp {
+    background:
+        radial-gradient(circle at 10% 20%, rgba(124, 252, 0, 0.12), transparent 20%),
+        radial-gradient(circle at 90% 10%, rgba(255, 77, 157, 0.12), transparent 22%),
+        radial-gradient(circle at 50% 80%, rgba(82, 229, 255, 0.10), transparent 22%),
+        linear-gradient(135deg, var(--bg), #11162A 45%, #0E1324 100%);
+    color: var(--text);
+}
+
+/* Main content width padding */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1200px;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, rgba(16, 23, 44, 0.95), rgba(10, 15, 30, 0.95));
+    border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+[data-testid="stSidebar"] * {
+    color: var(--text) !important;
+}
+
+.sidebar-brand {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar-sub {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+.hero-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.05;
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.03em;
+}
+
+.hero-sub {
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 760px;
+    line-height: 1.7;
+    margin-bottom: 1.4rem;
+}
+
+.section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0 0 0.85rem 0;
+    color: var(--text);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+/* =========================
+   GLASS CARDS
+========================= */
+.glass-card {
+    background: linear-gradient(180deg, var(--card), rgba(255,255,255,0.05));
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 1.2rem 1.2rem;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.glass-card-hero {
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04)),
+        radial-gradient(circle at top right, rgba(255,77,157,0.18), transparent 28%),
+        radial-gradient(circle at left bottom, rgba(82,229,255,0.14), transparent 24%);
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    margin-bottom: 1.2rem;
+}
+
+.stat-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 22px;
+    padding: 1rem 1rem;
+    box-shadow: var(--shadow);
+    min-height: 135px;
+}
+
+.stat-label {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.1;
+}
+
+.stat-caption {
+    margin-top: 0.55rem;
+    font-size: 0.88rem;
+    color: var(--muted);
+}
+
+/* =========================
+   MOOD PILLS
+========================= */
+.mood-pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 0.8rem;
+}
+
+.mood-pill {
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+/* =========================
+   INPUTS / LABELS
+========================= */
+label, .stMarkdown p, .stText, .stCaption {
+    color: var(--text) !important;
+}
+
+.stTextInput > div > div > input,
+.stTextArea textarea,
+.stDateInput input {
+    background: rgba(255,255,255,0.06) !important;
+    color: var(--text) !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+    border-radius: 14px !important;
+}
+
+.stTextArea textarea {
+    min-height: 140px;
+}
+
+/* Selectbox */
+.stSelectbox > div > div {
+    background: rgba(255,255,255,0.06) !important;
+    color: var(--text) !important;
+    border-radius: 14px !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+}
+
+/* Slider spacing */
+.stSlider {
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.stButton > button,
+div[data-testid="stFormSubmitButton"] > button {
+    width: 100%;
+    border-radius: 16px !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+    background: linear-gradient(135deg, var(--pink), var(--purple)) !important;
+    color: white !important;
+    font-weight: 700 !important;
+    padding: 0.8rem 1rem !important;
+    box-shadow: 0 12px 30px rgba(255, 77, 157, 0.28);
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover,
+div[data-testid="stFormSubmitButton"] > button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 34px rgba(255, 77, 157, 0.36);
+}
+
+/* =========================
+   METRIC CARDS
+========================= */
+[data-testid="metric-container"] {
+    background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.04));
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+
+[data-testid="metric-container"] label,
+[data-testid="metric-container"] div {
+    color: var(--text) !important;
+}
+
+/* =========================
+   DATAFRAME / TABLE
+========================= */
+[data-testid="stDataFrame"] {
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* =========================
+   ALERTS
+========================= */
+.stAlert {
+    border-radius: 18px !important;
+    border: 1px solid rgba(255,255,255,0.10) !important;
+}
+
+/* =========================
+   HORIZONTAL DIVIDER SPACE
+========================= */
+.spacer-8 { height: 8px; }
+.spacer-16 { height: 16px; }
+.spacer-24 { height: 24px; }
+.spacer-32 { height: 32px; }
+
+/* =========================
+   FOOTER NOTE
+========================= */
+.footer-note {
+    color: var(--muted);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+/* Hide Streamlit top header / grey bar */
+header[data-testid="stHeader"] {
+    display: none !important;
+}
+
+/* Remove extra top padding left after hiding header */
+.block-container {
+    padding-top: 1rem !important;
+}
