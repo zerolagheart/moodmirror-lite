@@ -54,13 +54,31 @@ It allows users to log their daily mood, track energy levels, write reflections,
 
 ```bash
 moodmirror-lite/
-│── app.py
-│── requirements.txt
-│── README.md
-│── styles.css
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── styles.css
 │
 ├── data/
 │   └── mood_data.csv
 │
 └── assets/
-    └── placeholder.txt
+    ├── dashboard.png
+    ├── insights.png
+    ├── journal.png
+    └── log-mood.png
+
+## Preview
+
+### Dashboard
+![Dashboard](assets/dashboard.png)
+
+### Log Mood
+![Log Mood](assets/log-mood.png)
+
+### Mood Journal
+![Mood Journal](assets/journal.png)
+
+### Insights
+![Insights](assets/insights.png)
