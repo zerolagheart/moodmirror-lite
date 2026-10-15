@@ -68,17 +68,3 @@ moodmirror-lite/
     ├── insights.png
     ├── journal.png
     └── log-mood.png
-
-## Preview
-
-### Dashboard
-![Dashboard](assets/dashboard.png)
-
-### Log Mood
-![Log Mood](assets/log-mood.png)
-
-### Mood Journal
-![Mood Journal](assets/journal.png)
-
-### Insights
-![Insights](assets/insights.png)
